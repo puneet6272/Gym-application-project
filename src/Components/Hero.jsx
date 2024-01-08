@@ -14,7 +14,7 @@ function Hero() {
     const [toggleClose, setToggleClose] = useState('Icon')
 
     return (
-        <div className=' flex justify-between' id='/'>
+        <div className=' flex  justify-between' id='/'>
 
             <section className='left basis-3/4 p-8 pt-6 flex flex-col gap-8'>
                 <NavBar />
