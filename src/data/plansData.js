@@ -1,9 +1,10 @@
 export const plansData = [
   {
+    id:0,
     icon: (
       <svg
-        width="15"
-        height="13"
+        width="34"
+        height="27"
         viewBox="0 0 15 13"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -19,10 +20,13 @@ export const plansData = [
     ],
   },
   {
+    id:1,
+    width: 'w-80 h-[33rem] bg-arun_orange',
+    bg:'linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%)',
     icon: (
       <svg
-        width="28"
-        height="24"
+        width="45"
+        height="35"
         viewBox="0 0 28 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -38,10 +42,11 @@ export const plansData = [
     ],
   },
   {
+    id:2,
     icon: (
       <svg
-        width="16"
-        height="15"
+      width="34"
+      height="27"
         viewBox="0 0 16 15"
         xmlns="http://www.w3.org/2000/svg"
       >
