@@ -17,7 +17,7 @@ function Footar_Contact() {
                     <a className=' w-8 mx-8' href="https://www.instagram.com/" target="_blank" >
 
                         <img className=' relative left-4' src={instagrame} alt="" />
-                        Instagram
+                        Instagram 
                     </a>
 
                     <a className=' w-8 mx-8 ' href="https://github.com/dashboard" target="_blank" >
