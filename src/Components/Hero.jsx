@@ -8,20 +8,17 @@ import NumberCounterss from 'number-counter'
 
 function Hero() {
 
-
-
-
     const [toggleClose, setToggleClose] = useState('Icon')
 
     return (
-        <div className=' flex  justify-between' id='/'>
+        <div className=' flex sm:justify-between justify-center' id='/'>
 
-            <section className='left basis-3/4 p-8 pt-6 flex flex-col gap-8'>
+            <section className='left sm:basis-3/4 w-full          p-8 pt-6 flex flex-col gap-8 items-center sm:items-start '>
                 <NavBar />
                 <div className='effect relative top-8 right'></div>
 
 
-                <div className=' mt-16 bg-gray-700 rounded-3xl px-5 py-4 w-fit uppercase text-white relative flex items-center justify-start'>
+                <div className='mt-16 bg-gray-700 rounded-3xl px-5 py-4 w-fit uppercase text-white relative flex items-center justify-start'>
                     <div className=' absolute bg-arun_orange border w-20 rounded-3xl h-5/6 left-3  z-0'></div>
                     <span className=' z-10'>THE BEST FITNESS CLUB IN THE TOWN
                     </span>
@@ -29,33 +26,33 @@ function Hero() {
 
 
                 {/* Hero Text */}
-                <div className='flex flex-col gap-6 text-8xl text-white font-bold'>
-                    <div>
+                <div className='flex flex-col gap-6 text-8xl text-white items-center font-bold sm:items-start '>
+                    <div className=' flex flex-col sm:flex-row items-center'>
                         <span className={`textStroke`}>SHAPE </span>
                         <span>YOUR</span>
                     </div>
-                    <div>
+                    <div className='flex flex-col items-center sm:flex-row'>
                         <span>IDEAL </span>
                         <span>BODY</span>
                     </div>
 
-                    <span className=' font-medium tracking-widest	text-sm w-5/6	'>In here we will help you to shape and build your ideal body and live up your life to fullest</span>
+                    <span className='font-medium tracking-widest text-sm w-5/6	'>In here we will help you to shape and build your ideal body and live up your life to fullest</span>
                 </div>
 
                 {/* number Figurs */}
-                <div className=' flex justify-between'>
-                    <div className=' text-md flex justify-between w-2/4 text-white'>
+                <div className=' flex justify-between '>
+                    <div className='text-md flex gap-4 justify-between text-white border w-full'>
                         <div>
-                            <span className='text-4xl'><NumberCounterss end = {140} start = {0} delay={'3'} preFix = "+" /> </span><br />
+                            <span className='text-4xl'><NumberCounterss end={140} start={0} delay={'3'} preFix="+" /> </span><br />
                             <span>EXPERT COACHES</span>
                         </div>
 
                         <div>
-                            <span className='text-4xl'><NumberCounterss end = {978} start = {0} delay={'4'} preFix = "+" /></span><br />
+                            <span className='text-4xl'><NumberCounterss end={978} start={0} delay={'4'} preFix="+" /></span><br />
                             <span>MEMBERS JOINED</span>
                         </div>
                         <div>
-                            <span className='text-4xl'><NumberCounterss end = {50} start = {0} delay={'2'} preFix = "+" /></span><br />
+                            <span className='text-4xl'><NumberCounterss end={50} start={0} delay={'2'} preFix="+" /></span><br />
                             <span>FITNESS PROGRAMS
                             </span>
                         </div>
@@ -71,7 +68,7 @@ function Hero() {
 
             </section>
 
-            <section className="basis-1/4 relative bg-arun_orange z-50">
+            <section className="sm:basis-1/4 bg-none relative bg-arun_orange z-50">
 
                 <button className=' absolute right-12 top-8 text-black bg-white  px-2 py-2 font-bold'>Join Now</button>
 
@@ -81,7 +78,7 @@ function Hero() {
                     <span className=' text-white text-xl'> 116 bpm</span>
                 </div>
 
-                <img className=' absolute top-36 right-36 w-[23rem] z-10' src={hero_image} alt="" srcset="" />
+                <img className=' visible absolute top-36 right-36 w-[23rem] z-10' src={hero_image} alt="" srcset="" />
                 <img className='absolute w-[15rem] right-80 top-16' src={hero_image_black} alt="" srcset="" />
 
                 <div className='flex gap-8 p-4 w-44 absolute bg-caloryCard rounded-md top-[30rem] right-[28rem]  z-50'>

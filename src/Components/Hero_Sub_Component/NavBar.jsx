@@ -3,15 +3,14 @@ import bars from './bars.png'
 import { Link } from 'react-scroll'
 function NavBar() {
 
+
     const [but, setbut] = useState(false)
     const [nabBut, setNavBut] = useState(true)
     console.log(nabBut)
     return (
-        <div className='flex justify-between'>
+        <div className='flex justify-between w-full'>
 
-            <img className=' h-12' src="images/logo.png" alt='logo' />
-
-
+            <img className=' h-12 ' src="images/logo.png" alt='logo' />
 
             <div className='flex  items-end'>
 
@@ -21,7 +20,7 @@ function NavBar() {
                         <img className='w-8 h-8 ' src={bars} alt="" />
                     </div>
                 </button>
-                <ul className={`z-50 absolute top-24 sm:top-0  flex flex-col sm:flex-row sm:right-[30rem] sm:bg-transparent list-none gap-8 bg-slate-800 p-8 text-white rounded-lg ${nabBut === true ? 'sm:visible' : 'sm:hidden'}`}>
+                <ul className={`z-50 absolute top-24 sm:top-0  flex flex-col sm:flex-row sm:right-[30rem] sm:bg-transparent right-12 list-none gap-8 bg-slate-800 p-8 text-white rounded-lg ${nabBut === true ? 'sm:visible hidden' : 'sm:hidden visible'}`}>
 
                     <li onClick={() => setbut(false)} className=' cursor-pointer'>
                         <Link
@@ -62,7 +61,7 @@ function NavBar() {
 
 
                     <li onClick={() => setbut(false)} className=' cursor-pointer'>                        <Link
-                        to='testimonals'
+                        to='testimonals '
                         span={true}
                         smooth={true}>Testimonials</Link>
                     </li>

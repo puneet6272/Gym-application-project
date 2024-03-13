@@ -6,6 +6,10 @@ import instagrame from '../assets/instagram.png'
 import { Link } from 'react-scroll'
 
 function Footar_Contact() {
+
+
+console.log(2 +2 )
+
     return (
         <div className=' relative'>
             <hr />
